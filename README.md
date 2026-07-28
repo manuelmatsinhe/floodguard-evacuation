@@ -1,5 +1,7 @@
 # FloodGuard Evacuation 🌊🏃‍♂️
 
+> 🏆 **Note:** This project was developed as part of a hackathon by **BIT AFRICA**.
+
 **FloodGuard Evacuation** is an advanced, tech-driven web application designed to optimize and manage evacuation processes in high-risk areas prone to floods. Our primary goal is to save lives through efficient routing, real-time crowdsourced alerts, and community coordination.
 
 ---
