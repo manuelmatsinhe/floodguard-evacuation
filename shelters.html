@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shelters | FloodGuard Evacuation</title>
+  <meta name="description" content="Available shelters for FloodGuard.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="header">
+      <div class="logo">
+        <h1><span class="material-symbols-outlined" style="vertical-align: bottom; font-size: inherit;">water</span> FloodGuard</h1>
+      </div>
+      <div class="menu-container" style="display: flex; align-items: center;">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme"><span class="material-symbols-outlined">dark_mode</span></button>
+        <button class="hamburger" aria-label="Toggle menu" id="hamburger-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="main-nav" id="main-nav">
+          <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="map.html">Evacuation Map</a></li>
+            <li><a href="alerts.html">Alerts</a></li>
+            <li><a href="shelters.html" class="active">Shelters</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="hero-section">
+        <h2>Shelter Directory</h2>
+        <p>Find safe, secure, and equipped locations near you.</p>
+      </section>
+      
+      <div class="search-bar-container">
+        <input type="text" class="search-input" placeholder="Search by zip code or neighborhood...">
+        <button class="btn-primary">Search Shelters</button>
+      </div>
+
+      <section class="status-grid">
+        <div class="status-card safe shelter-card">
+          <div class="shelter-header">
+            <h3><span class="material-symbols-outlined" style="vertical-align: bottom;">business</span> Main City Hall</h3>
+            <span class="distance">2.4 miles away</span>
+          </div>
+          <div class="capacity-bar-container">
+            <div class="capacity-label">
+              <span>Capacity</span>
+              <span>75% Full</span>
+            </div>
+            <div class="capacity-bar">
+              <div class="capacity-fill warning-bg" style="width: 75%;"></div>
+            </div>
+          </div>
+          <p class="status-desc">Available: Hot Meals, Drinking Water, Basic First Aid, Power Outlets.</p>
+          <div class="action-links mt-3">
+            <a href="map.html" class="btn-outline-primary btn-small">Get Directions</a>
+          </div>
+        </div>
+
+        <div class="status-card safe shelter-card">
+          <div class="shelter-header">
+            <h3><span class="material-symbols-outlined" style="vertical-align: bottom;">school</span> High School Gym</h3>
+            <span class="distance">4.1 miles away</span>
+          </div>
+          <div class="capacity-bar-container">
+            <div class="capacity-label">
+              <span>Capacity</span>
+              <span>20% Full</span>
+            </div>
+            <div class="capacity-bar">
+              <div class="capacity-fill safe-bg" style="width: 20%;"></div>
+            </div>
+          </div>
+          <p class="status-desc">Available: Sleeping Bags, Water, Pet Friendly Area.</p>
+          <div class="action-links mt-3">
+            <a href="map.html" class="btn-outline-primary btn-small">Get Directions</a>
+          </div>
+        </div>
+        
+        <div class="status-card danger shelter-card">
+          <div class="shelter-header">
+            <h3><span class="material-symbols-outlined" style="vertical-align: bottom;">church</span> Downtown Center</h3>
+            <span class="distance">1.2 miles away</span>
+          </div>
+          <div class="capacity-bar-container">
+            <div class="capacity-label">
+              <span>Capacity</span>
+              <span>100% Full</span>
+            </div>
+            <div class="capacity-bar">
+              <div class="capacity-fill danger-bg" style="width: 100%;"></div>
+            </div>
+          </div>
+          <p class="status-desc">Currently at maximum capacity. Please proceed to High School Gym.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 FloodGuard Evacuation. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

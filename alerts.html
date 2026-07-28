@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alerts | FloodGuard Evacuation</title>
+  <meta name="description" content="Real-time alerts for FloodGuard.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="header">
+      <div class="logo">
+        <h1><span class="material-symbols-outlined" style="vertical-align: bottom; font-size: inherit;">water</span> FloodGuard</h1>
+      </div>
+      <div class="menu-container" style="display: flex; align-items: center;">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme"><span class="material-symbols-outlined">dark_mode</span></button>
+        <button class="hamburger" aria-label="Toggle menu" id="hamburger-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="main-nav" id="main-nav">
+          <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="map.html">Evacuation Map</a></li>
+            <li><a href="alerts.html" class="active">Alerts</a></li>
+            <li><a href="shelters.html">Shelters</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="hero-section">
+        <h2>Active Alerts</h2>
+        <p>Stay informed with the latest updates from emergency services.</p>
+      </section>
+      
+      <div class="two-column-layout">
+        <div class="main-column">
+          <h3 class="section-title">Live Emergency Feed</h3>
+          <div class="status-card danger feed-card">
+            <div class="card-header-flex">
+              <h3><span class="material-symbols-outlined" style="vertical-align: bottom; color: var(--danger);">emergency</span> Sector A - Evacuate Immediately</h3>
+              <span class="time-stamp">10 mins ago</span>
+            </div>
+            <p class="status-desc">Critical water levels detected. The dam has reached 98% capacity. All residents must evacuate via Route 4.</p>
+            <div class="action-links">
+              <a href="map.html" class="btn-outline-primary btn-small">View Evacuation Route</a>
+            </div>
+          </div>
+          
+          <div class="status-card warning feed-card">
+            <div class="card-header-flex">
+              <h3><span class="material-symbols-outlined" style="vertical-align: bottom; color: var(--warning);">warning</span> Riverfront - Prepare for Evacuation</h3>
+              <span class="time-stamp">45 mins ago</span>
+            </div>
+            <p class="status-desc">Water levels rising at 2cm/hour. Gather essential documents, medication, and a 3-day supply of water.</p>
+            <div class="action-links">
+              <a href="#" class="btn-outline-primary btn-small">View Preparation Checklist</a>
+            </div>
+          </div>
+        </div>
+        
+        <aside class="side-column">
+          <div class="info-widget">
+            <h3><span class="material-symbols-outlined" style="vertical-align: bottom;">call</span> Emergency Contacts</h3>
+            <ul class="contact-list">
+              <li><strong>Search & Rescue:</strong> <a href="tel:112">112</a></li>
+              <li><strong>Local Police:</strong> <a href="tel:5550199">555-0199</a></li>
+              <li><strong>Red Cross:</strong> <a href="tel:5550188">555-0188</a></li>
+            </ul>
+          </div>
+          
+          <div class="info-widget">
+            <h3><span class="material-symbols-outlined" style="vertical-align: bottom;">checklist</span> Quick Checklist</h3>
+            <ul class="checklist">
+              <li><input type="checkbox" id="c1"> <label for="c1">Important Documents</label></li>
+              <li><input type="checkbox" id="c2"> <label for="c2">Medications</label></li>
+              <li><input type="checkbox" id="c3"> <label for="c3">Flashlight & Batteries</label></li>
+              <li><input type="checkbox" id="c4"> <label for="c4">First Aid Kit</label></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 FloodGuard Evacuation. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

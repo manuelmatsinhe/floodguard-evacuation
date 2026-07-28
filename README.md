@@ -1,29 +1,39 @@
 # FloodGuard Evacuation 🌊🏃‍♂️
 
-O **FloodGuard Evacuation** é uma solução tecnológica desenvolvida para otimizar e gerenciar processos de evacuação em áreas de risco propensas a cheias e inundações. O objetivo principal é salvar vidas através de rotas eficientes, alertas em tempo real e coordenação comunitária.
+**FloodGuard Evacuation** is an advanced, tech-driven web application designed to optimize and manage evacuation processes in high-risk areas prone to floods. Our primary goal is to save lives through efficient routing, real-time crowdsourced alerts, and community coordination.
 
 ---
 
-## 🚀 Funcionalidades Principais
+## 🚀 Key Features
 
-* **Mapeamento de Rotas de Fuga:** Cálculo das rotas mais seguras e rápidas para os pontos de recolha/abrigos.
-* **Alertas em Tempo Real:** Notificações instantâneas baseadas em dados meteorológicos e níveis de água.
-* **Gestão de Abrigos:** Monitorização da capacidade e recursos disponíveis em cada centro de evacuação.
-* **Comunicação Offline:** Mecanismos para partilha de informações essenciais mesmo com rede limitada.
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-* **Linguagem Principal:** Java / Python (ajustar conforme o projeto)
-* **Interface/Mobile:** Android SDK / Flutter
-* **Persistência de Dados:** Arquivos de texto / Banco de Dados SQL
-* **Versionamento:** Git e GitHub
+* **Constant Live Tracking (`Always-on Dot`)**: Integrates directly with the HTML5 Geolocation API to provide a persistent, real-time top banner showing your exact latitude, longitude, and accuracy.
+* **Crowdsourced SOS Validation**: A sophisticated math-based alert system (using the Haversine formula). If a user broadcasts an SOS, it registers locally. If **3 or more SOS signals** are broadcasted within a 500-meter radius in a 10-minute window, the system mathematically validates a crisis and triggers a MASS ZONE ALERT, dispatching emergency services.
+* **FloodGuard AI Assistant**: An integrated conversational chatbot that analyzes app parameters to help users find routes, locate shelters, and initiate emergency protocols instantly.
+* **Community Insights**: A crowd-sourcing mechanism allowing civilians to report dynamic updates (e.g., offering a house as a shelter, reporting a road blockage, or updating water levels). These insights instantly verify and update the UI across the Shelters, Alerts, and Map pages.
+* **Evacuation Routing**: Calculates the safest, fastest route to the nearest community shelter directly on an interactive map.
+* **Dynamic Theming**: Full CSS-variable-based architecture supporting both a premium Light Mode and Dark Mode out of the box.
 
 ---
 
-## 📦 Como Executar o Projeto
+## 🛠️ Technologies Used
 
-1. Clone este repositório:
+* **Frontend Architecture**: Pure HTML5, CSS3, and Vanilla JavaScript (No heavy frameworks required).
+* **Iconography**: Google Material Symbols (Outlined).
+* **State Management**: Browser `localStorage` and dynamic DOM manipulation for simulating backend network verification and data persistence across multiple pages.
+* **Geolocation**: HTML5 `navigator.geolocation.watchPosition` for real-time tracking.
+
+---
+
+## 📦 How to Run the Project
+
+Since this project relies on pure frontend technologies, no build steps or heavy servers are required!
+
+1. Clone this repository:
    ```bash
-   git clone [https://github.com/seu-usuario/floodguard-evacuation.git](https://github.com/seu-usuario/floodguard-evacuation.git)
+   git clone https://github.com/your-username/floodguard-evacuation.git
+   ```
+2. Navigate into the folder:
+   ```bash
+   cd floodguard-evacuation
+   ```
+3. Open `index.html` in any modern web browser to launch the application.
