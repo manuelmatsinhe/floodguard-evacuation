@@ -32,7 +32,7 @@ Since this project relies on pure frontend technologies, no build steps or heavy
 
 1. Clone this repository:
    ```bash
-  https://github.com/manuelmatsinhe/floodguard-evacuation.git
+   https://github.com/manuelmatsinhe/floodguard-evacuation.git
    ```
 2. Navigate into the folder:
    ```bash
